@@ -67,7 +67,7 @@ function go(queue)
 		}
 	}
 
-	// Call the next function, pass a controller and arguments
+	// Call the next function, pass the controller and arguments
 
 	if (queue.list[queue.index])
 	{
