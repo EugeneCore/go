@@ -87,7 +87,7 @@ go([
 	{
 		c.x = 21;
 
-		c.next(c.x);
+		c.next(c);
 	},
 
 	function(c)
