@@ -52,7 +52,7 @@ go([
 		c.next();
 	},
 
-	function(c)
+	function c(c)
 	{
 		c.a(); // Will call the first function
 	}
