@@ -82,8 +82,8 @@ go([
 
 	function(c, n, b)
 	{
-		console.log(n) // 42;
-		console.log(b) // true;
+		console.log(n); // 42;
+		console.log(b); // true;
 	}
 ]);
 ```
