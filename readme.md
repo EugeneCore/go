@@ -68,7 +68,6 @@ go([
 	function(c)
 	{
 		let x = 21;
-
 		c.next(x);
 	},
 
@@ -86,7 +85,6 @@ go([
 	function(c)
 	{
 		c.x = 21;
-
 		c.next(c);
 	},
 
