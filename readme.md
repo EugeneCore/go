@@ -61,7 +61,7 @@ go([
 
 ## Arguments
 
-Any arguments can be passed after a controller:
+Arguments can be passed after a controller:
 
 ```js
 go([
@@ -75,15 +75,24 @@ go([
 	function(c, x)
 	{
 		console.log(x); // 21
-		x *= 2;
+	}
+]);
+```
 
-		c.next(x, true);
+Arguments can be passed inside a controller:
+
+```js
+go([
+	function(c)
+	{
+		c.x = 21;
+
+		c.next(c.x);
 	},
 
-	function(c, n, b)
+	function(c)
 	{
-		console.log(n); // 42;
-		console.log(b); // true;
+		console.log(c.x); // 21
 	}
 ]);
 ```
