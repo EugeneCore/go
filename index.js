@@ -42,7 +42,7 @@ function go(queue)
 				queue.controller[queue.list[i].name] = function()
 				{
 					queue.index = i;
-					queue.list[i](queue.controller, ...[...arguments].slice(1));
+					queue.list[i](queue.controller, ...arguments);
 				}
 			}
 		}
