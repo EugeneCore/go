@@ -85,7 +85,7 @@ go([
 	function(c)
 	{
 		c.x = 21;
-		c.next(c);
+		c.next();
 	},
 
 	function(c)
