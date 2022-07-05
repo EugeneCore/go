@@ -47,7 +47,7 @@ function go(queue)
 			}
 		}
 
-		// Call next function
+		// Call the next function
 
 		queue.controller.next = function()
 		{
@@ -59,7 +59,7 @@ function go(queue)
 			}
 		}
 
-		// Repeat current function
+		// Repeat the current function
 
 		queue.controller.repeat = function()
 		{
@@ -67,7 +67,7 @@ function go(queue)
 		}
 	}
 
-	// Call next function, pass a controller and arguments
+	// Call the next function, pass a controller and arguments
 
 	if (queue.list[queue.index])
 	{
