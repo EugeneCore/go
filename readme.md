@@ -27,7 +27,7 @@ go([
 
 ## Controller
 
-A controller (c) will be passed as a first argument of each function.
+A controller (c) always passed at the first argument of each function.
 
 ### Methods
 
@@ -36,7 +36,7 @@ c.next(); // To call the next function
 c.repeat(); // To repeat the current function
 ```
 
-If a function has a name, it can be called by a controller:
+If a function has a name, it can be called by the controller:
 
 ```js
 go([
@@ -61,7 +61,7 @@ go([
 
 ## Arguments
 
-Arguments can be passed after a controller:
+Arguments can be passed after the controller:
 
 ```js
 go([
@@ -78,7 +78,7 @@ go([
 ]);
 ```
 
-Arguments can be passed inside a controller:
+Arguments can be passed inside the controller:
 
 ```js
 go([
