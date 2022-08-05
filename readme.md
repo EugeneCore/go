@@ -6,20 +6,17 @@ Runs an arrays of functions.
 
 ```js
 go([
-  function(c)
-  {
+  function(c) {
     console.log(1);
     c.next();
   },
 
-  function(c)
-  {
+  function(c) {
     console.log(2);
     c.next();
   },
 
-  function(c)
-  {
+  function(c) {
     console.log(3);
   }
 ]);
@@ -40,20 +37,17 @@ If a function has a name, it can be called by the controller:
 
 ```js
 go([
-  function a(c)
-  {
+  function a(c) {
     console.log(1);
     c.next();
   },
 
-  function b(c)
-  {
+  function b(c) {
     console.log(2);
     c.next();
   },
 
-  function c(c)
-  {
+  function c(c) {
     c.a(); // Will call the first function
   }
 ]);
@@ -65,14 +59,12 @@ Arguments can be passed after the controller:
 
 ```js
 go([
-  function(c)
-  {
+  function(c) {
     let x = 21;
     c.next(x);
   },
 
-  function(c, x)
-  {
+  function(c, x) {
     console.log(x); // 21
   }
 ]);
@@ -82,14 +74,12 @@ Arguments can be passed inside the controller:
 
 ```js
 go([
-  function(c)
-  {
+  function(c) {
     c.x = 21;
     c.next();
   },
 
-  function(c)
-  {
+  function(c) {
     console.log(c.x); // 21
   }
 ]);
